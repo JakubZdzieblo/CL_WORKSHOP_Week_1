@@ -38,7 +38,7 @@ public class Main {
 
     }
 
-    static boolean yesOrNo () {
+    private static boolean yesOrNo () {
         Scanner scan = new Scanner(System.in);
 
         while (true) {

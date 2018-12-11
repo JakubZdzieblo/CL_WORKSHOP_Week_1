@@ -24,7 +24,7 @@ public class Main {
 
     }
 
-    static int[] input6LottoNumbers() {
+    private static int[] input6LottoNumbers() {
 
         Scanner scan = new Scanner(System.in);
 
@@ -56,7 +56,7 @@ public class Main {
 
     }
 
-    static int[] lotto6Numbers() {
+    private static int[] lotto6Numbers() {
 
         Integer[] arr = new Integer[49];
         for (int i = 0; i < arr.length; i++) {
@@ -76,7 +76,7 @@ public class Main {
         return result;
     }
 
-    static boolean checkIfNumberIsInArray (int[] arr, int number) {
+    private static boolean checkIfNumberIsInArray (int[] arr, int number) {
         for (int i = 0; i < arr.length; i++) {
             if (number == arr[i]) {
                 return true;
@@ -85,7 +85,7 @@ public class Main {
         return false;
     }
 
-    static int lottoResultCheck (int[] playerArray, int[] drawArray) {
+    private static int lottoResultCheck (int[] playerArray, int[] drawArray) {
         int numbersHitCount = 0;
 
         if (playerArray.length != drawArray.length) {

@@ -9,14 +9,14 @@ public class Main {
         System.out.println("2 x D6 + 3: " + diceRoll(" 2d6 + 3 "));
         System.out.println("1 x D100: " + diceRoll("D100"));
         System.out.println("5 x D12 - 5: " + diceRoll("5d12-5"));
-        System.out.println("No dice type: ");
+        System.out.println("No dice type test: ");
         System.out.println(diceRoll("12+5"));
-        System.out.println("Bad format: ");
+        System.out.println("Bad format test: ");
         System.out.println(diceRoll("abcd"));
 
     }
 
-    static int diceRoll(String diceCode) {
+    private static int diceRoll(String diceCode) {
         int modIndex, mod, rolls, diceType, result=0;
         diceCode = diceCode.toUpperCase().trim();
         int dIndex = diceCode.indexOf('D');

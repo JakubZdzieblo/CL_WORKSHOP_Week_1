@@ -60,7 +60,7 @@ public class Main {
         }
     }
 
-    static ArrayList<String> findTextOnSite (String url, String cssQuery) {
+    private static ArrayList<String> findTextOnSite (String url, String cssQuery) {
         ArrayList<String> siteContent = new ArrayList<>();
         Connection connect = Jsoup.connect(url);
         try {
@@ -77,7 +77,7 @@ public class Main {
         return siteContent;
     }
 
-    static ArrayList<String> addWordsToList (ArrayList<String> list) {
+    private static ArrayList<String> addWordsToList (ArrayList<String> list) {
         ArrayList<String> wordsList = new ArrayList<>();
         for (String element : list) {
             String[] wordArray = element.split(" |!|\\?|,|:|;|\\.|\"|'");

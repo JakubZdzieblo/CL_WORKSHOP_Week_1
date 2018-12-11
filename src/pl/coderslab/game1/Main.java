@@ -12,7 +12,7 @@ public class Main {
         }
 
 
-    static void guessANumber (int prizeNumber) {
+    private static void guessANumber (int prizeNumber) {
 
         Scanner scan = new Scanner(System.in);
         System.out.println("Please pick a number");
