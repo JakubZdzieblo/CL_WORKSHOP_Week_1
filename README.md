@@ -1,6 +1,6 @@
 ## Coders Lab Workshop Week 1
 
-Five simple programs from the first week of my Java course:
+Five simple programs made after the first week of my Java course:
 
  - **Game1**: guess a number from 1-100 range.
  - **Game2**: LOTTO simulator.
